@@ -24,10 +24,14 @@ function App() {
     <div className="App">
 
     {data ? data.map(e => <>
-    
-    {e.id}
     <br />
+
+    <h3>{e.title}</h3>
+<br />
+    <p>{e.content}</p>
     
+    <br />
+    <hr />
     </>) : <>loading ...</>}
 
     </div>

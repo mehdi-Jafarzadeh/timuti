@@ -5,19 +5,22 @@ function App() {
 
   const [data, setdata] = useState();
 
-  useEffect(() => {
+  const time = 10000
 
+  useEffect(() => {
     getApiData()
-  }, []);
+    const interval = setInterval(() => {
+      console.log('fetch');
+      getApiData()
+    }, time);
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, [])
 
   const getApiData = async () => {
-    const response = await fetch(
-      "https://jsonplaceholder.org/posts"
-    ).then((response) => response.json());
-  
-    // update the state
-    console.log(response);
+    const response = await fetch("https://jsonplaceholder.org/posts")
+    .then((response) => response.json());
     setdata(response);
+
   };
 
   return (

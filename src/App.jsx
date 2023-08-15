@@ -40,34 +40,32 @@ function App() {
     <hr />
     </>) : <>loading ...</>} */}
 
-{/* {data ? data
-.filter(e => e.id == 23 )
+{data ? data
+// .filter(e => e.id == 23 )
 .map(e => <>
-  {e.title}<br/>
-  {e.status}<br/>
-  <img src={e.thumbnail} /><br/>
-  <img src={e.image} /><br/>
-  {e.category}<br/>
-</>) : <h1>Loading</h1> } */}
 
 <div className="card">
-  <img className='thum'
-  src="https://dummyimage.com/200x200/2c1559/ipsum-non-justo.png&text=jsonplaceholder.org" alt="" />
-
+  <img className='thum'src={e.thumbnail} alt="" />
   <div className="detail">
-    
     <div className="card-detail-top">
-      <h3>title</h3>
-      <p>status</p>
+      <h3>{e.title}</h3>
     </div>
     <div className="card-detail-but">
-      <p>category</p>
+      
+      <p className='card-cat'>category :</p>
+      <pre> {e.category}</pre>
+      <p className='card-status'>status : </p>
+      <pre> {e.status}</pre>
+      <button className='card-btn'>go to post</button>
     </div>
-
   </div>
 
-
 </div>
+
+</>) : <h1>Loading</h1> }
+
+
+
 
 
 

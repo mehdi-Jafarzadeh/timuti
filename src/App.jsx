@@ -23,10 +23,13 @@ function App() {
 
   };
 
+
+  console.log(data)
+
   return (
     <div className="App">
 
-    {data ? data.map(e => <>
+    {/* {data ? data.map(e => <>
     <br />
 
     <h3>{e.title}</h3>
@@ -35,7 +38,21 @@ function App() {
     
     <br />
     <hr />
-    </>) : <>loading ...</>}
+    </>) : <>loading ...</>} */}
+
+{/* {data ? data
+.filter(e => e.id == 23 )
+.map(e => <>
+  {e.title}<br/>
+  {e.status}<br/>
+  <img src={e.thumbnail} /><br/>
+  <img src={e.image} /><br/>
+  {e.category}<br/>
+</>) : <h1>Loading</h1> } */}
+
+
+
+
 
     </div>
   );

@@ -50,7 +50,24 @@ function App() {
   {e.category}<br/>
 </>) : <h1>Loading</h1> } */}
 
+<div className="card">
+  <img className='thum'
+  src="https://dummyimage.com/200x200/2c1559/ipsum-non-justo.png&text=jsonplaceholder.org" alt="" />
 
+  <div className="detail">
+    
+    <div className="card-detail-top">
+      <h3>title</h3>
+      <p>status</p>
+    </div>
+    <div className="card-detail-but">
+      <p>category</p>
+    </div>
+
+  </div>
+
+
+</div>
 
 
 

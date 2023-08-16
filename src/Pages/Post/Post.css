@@ -1,0 +1,21 @@
+.post-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    width: 80%;
+    margin: 3vw auto;
+}
+.publishdetail{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    background: #000;
+    border: none;
+    color: white;
+    padding : 10px ;
+    border-radius: 5px;
+    margin: 1rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}

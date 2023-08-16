@@ -8,6 +8,10 @@ const Landing = (props) => {
 
     return (
         <div>
+          <p>Mehdi jafarzadeh</p><br />
+          <a href="tel://+989143259118" >09143259118</a>
+          <br />
+          <a href="mailto:mehdijafarzadehh4@gmail.com">mehdijafarzadehh4@gmail.com</a>
             
             {props.data ? props.data
 .map(e => <>
@@ -32,7 +36,7 @@ const Landing = (props) => {
 
 </>) : <h1>Loading</h1> }
 
-
+<Link to="/add" className="add"><b>+</b></Link>
 
 
         </div>

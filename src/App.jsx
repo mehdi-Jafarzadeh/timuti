@@ -1,7 +1,8 @@
 import './App.css';
 import { Routes , Route } from 'react-router-dom'
-import Landing from './landing';
-import Post from './Post/Post';
+import Landing from './Pages/Landing/landing';
+import Post from './Pages/Post/Post';
+import Add from './Pages/Add/Add'
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 <Routes>
       <Route path="/" element={<Landing data={data}/>} />
       <Route path="/post" element={<Post data={data}/>} />
+      <Route path="/add" element={<Add />} />
     </Routes>
     </div>
   );

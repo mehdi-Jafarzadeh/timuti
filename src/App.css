@@ -41,3 +41,18 @@ padding: 4%;
     margin-left: 5rem;
 
 }
+.add{
+    background: #000;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+    border-radius: 10px;
+}

@@ -22,7 +22,7 @@
 padding: 4%;
 }
 .card-detail-but{
-    padding: 4.5%;
+    height: 50%;
     display: flex;
     align-items: center;
 
@@ -34,6 +34,7 @@ padding: 4%;
     padding : 10px ;
     border-radius: 5px;
     margin-left: 5rem;
+    text-decoration: none;
 }
 .card-cat ,
 .card-status{

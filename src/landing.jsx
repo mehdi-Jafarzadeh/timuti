@@ -1,33 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Landing = () => {
+const Landing = (props) => {
 
     
-  const [data, setdata] = useState();
-
-  const time = 10000
-
-  useEffect(() => {
-    getApiData()
-    const interval = setInterval(() => {
-      console.log('fetch');
-      getApiData()
-    }, time);
-    return () => clearInterval(interval);
-  }, [])
-
-  const getApiData = async () => {
-    const response = await fetch("https://jsonplaceholder.org/posts")
-    .then((response) => response.json());
-    setdata(response);
-
-  };
+  console.log(props.data)
 
     return (
         <div>
             
-            {data ? data
+            {props.data ? props.data
 .map(e => <>
 
 <div className="card">
